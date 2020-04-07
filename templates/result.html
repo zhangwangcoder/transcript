@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1 class="mt-2">Succeed</h1>
+    <hr class="mt-0 mb-4">
+
+
+    <ul class="list-group">
+        <li class="list-group-item">
+            <a href="{{ transcript.audio.audio.url }}">{{ transcript.audio.audio.name }}</a>
+        </li>
+
+        <li class="list-group-item">
+            <a href="{{ transcript.transcript.url }}">{{ transcript.transcript.name }}</a>
+        </li>
+    </ul>
+    <hr class="mt-0 mb-4">
+    <div>
+        <a  class="btn btn-success" href="/upload" >Back to file upload
+        </a>
+    </div>
+{% endblock %}

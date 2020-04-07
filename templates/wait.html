@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block javascript %}
+    <script src="{% static 'js/wait.js' %}"></script>
+{% endblock %}
+{% block content %}
+    <h1 class="mt-2">Processing</h1>
+    <hr class="mt-0 mb-4">
+    <p>Please wait while processing</p>
+    <h6 hidden audio_id="{{ audio }}">{{ audio }}</h6>
+{% endblock %}
